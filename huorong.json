@@ -2,19 +2,12 @@
 	"homepage": "https://www.huorong.cn/",
 	"version": "5.0.36.11-00001",
 	"description": "火绒安全软件",
-	"url": "https://down5.huorong.cn/sysdiag-full-5.0.36.11.exe",
-	"installer": {
-		"script": "start-process $dir/sysdiag-full-5.0.36.11.exe -Verb runas",
-		"keep": false
-	},
+	"url": "https://down5.huorong.cn/sysdiag-full-5.0.36.11.exe#/dl.7z",
 	"shortcuts": [
         [
             "bin/HipsMain.exe",
             "火绒"
         ]
     ],
-	"uninstall": {
-		"file": "start-process $dir/uninst.exe -Verb runas"
-	},
-	"bin": "sysdiag-full-5.0.36.11.exe"
+	"bin": "bin/HipsMain.exe"
 }
