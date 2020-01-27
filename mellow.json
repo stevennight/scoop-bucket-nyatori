@@ -4,7 +4,7 @@
 	"description": "Mellow proxy",
 	"url": "https://github.com/mellow-io/mellow/releases/download/v0.1.11/Mellow.Setup.0.1.11.exe#/dl.zip",
 	"post_install": [
-		"7z.exe x \"$dir\\`$PLUGINSDIR\\app-64.7z\" -oc:\"\\$dir\" -aoa"
+		"7z.exe x \"$dir\\`$PLUGINSDIR\\app-64.7z\" -o\"$dir\" -aoa"
 	],
 	"bin": "Mellow.exe"
 }
