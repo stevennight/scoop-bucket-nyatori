@@ -1,0 +1,7 @@
+{
+	"homepage": "https://github.com/mellow-io/mellow",
+	"version": "0.1.11",
+	"description": "Mellow proxy",
+	"url": "https://github.com/mellow-io/mellow/releases/download/v0.1.11/Mellow.Setup.0.1.11.exe#/dl.zip",
+	"bin": "Mellow.exe"
+}
