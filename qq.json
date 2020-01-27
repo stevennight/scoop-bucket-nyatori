@@ -5,9 +5,9 @@
 	"url": "https://qd.myapp.com/myapp/qqteam/pcqq/PCQQ2020.exe#/dl.7z",
 	"shortcuts": [
         [
-            "bin/HipsMain.exe",
-            "火绒"
+            "Files\Bin\QQ.exe",
+            "腾讯QQ"
         ]
     ],
-	"bin": "bin/HipsMain.exe"
+	"bin": "Files\Bin\QQ.exe"
 }
