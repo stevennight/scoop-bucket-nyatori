@@ -1,0 +1,13 @@
+{
+	"homepage": "https://im.qq.com/",
+	"version": "9.2.3",
+	"description": "QQ PC版",
+	"url": "https://qd.myapp.com/myapp/qqteam/pcqq/PCQQ2020.exe#/dl.7z",
+	"shortcuts": [
+        [
+            "bin/HipsMain.exe",
+            "火绒"
+        ]
+    ],
+	"bin": "bin/HipsMain.exe"
+}
