@@ -5,12 +5,15 @@
 	"url": "https://qd.myapp.com/myapp/qqteam/pcqq/PCQQ2020.exe#/dl.zip",
 	"installer": {
 		"script": [
-			"Move-Item \"$dir\\Application Data\\*\" -Destination \"%AppData%\" -Force",
-			"Move-Item \"$dir\\Common\\*\" -Destination \"C:\\Program Files (x86)\\Common Files\" -Force",
+			"$sh = new-object -com 'Shell.Application'"
+			"$scriptblock = 'Move-Item \"$dir\\Application Data\\*\" -Destination \"%AppData%\" -Force'",
+			"$sh.ShellExecute('powershell', '-NoExit -Command $scriptblock', '', 'runas')"
+			"$scriptblock = 'Move-Item \"$dir\\Common\\*\" -Destination \"C:\\Program Files (x86)\\Common Files\" -Force'",
+			"$sh.ShellExecute('powershell', '-NoExit -Command $scriptblock', '', 'runas')"
 			"Move-Item \"$dir\\Files\\*\" -Destination \"$dir\" -Force",
-			"Remove-Item \"$dir\\Application Data\" -Force",
-			"Remove-Item \"$dir\\Common\" -Force",
-			"Remove-Item \"$dir\\Files\" -Force",
+			"Remove-Item \"$dir\\Application Data\" -Force -Recurse",
+			"Remove-Item \"$dir\\Common\" -Force -Recurse",
+			"Remove-Item \"$dir\\Files\" -Force -Recurse",
 			"Remove-Item \"$dir\\txupd.exe\" -Force"
 		]
 	},
