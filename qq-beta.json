@@ -7,9 +7,9 @@
 		"script": [
 			"$sh = new-object -com 'Shell.Application'"
 			"$scriptblock = 'Move-Item \"$dir\\Application Data\\*\" -Destination \"$env:APPDATA\" -Force'",
-			"$sh.ShellExecute('powershell', '-NoExit -Command $scriptblock', '', 'runas')"
+			"$sh.ShellExecute('powershell', '-NoExit -Command $scriptblock', '', 'runas')",
 			"$scriptblock = 'Move-Item \"$dir\\Common\\*\" -Destination \"C:\\Program Files (x86)\\Common Files\" -Force'",
-			"$sh.ShellExecute('powershell', '-NoExit -Command $scriptblock', '', 'runas')"
+			"$sh.ShellExecute('powershell', '-NoExit -Command $scriptblock', '', 'runas')",
 			"Move-Item \"$dir\\Files\\*\" -Destination \"$dir\" -Force",
 			"Remove-Item \"$dir\\Application Data\" -Force -Recurse",
 			"Remove-Item \"$dir\\Common\" -Force -Recurse",
