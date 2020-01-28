@@ -5,9 +5,13 @@
 	"url": "https://qd.myapp.com/myapp/qqteam/pcqq/PCQQ2020.exe#/dl.zip",
 	"installer": {
 		"script": [
-			
-			"Move-Item \"$dir\\Files\\*\" -Destination \"$dir\"",
-			"Remove-Item \"$dir\\txupd.exe\""
+			"Move-Item \"$dir\\Application Data\\*\" -Destination \"%AppData%\" -Force",
+			"Move-Item \"$dir\\Common\\*\" -Destination \"C:\\Program Files (x86)\\Common Files\" -Force",
+			"Move-Item \"$dir\\Files\\*\" -Destination \"$dir\" -Force",
+			"Remove-Item \"$dir\\Application Data\" -Force"
+			"Remove-Item \"$dir\\Common\" -Force"
+			"Remove-Item \"$dir\\Files\" -Force"
+			"Remove-Item \"$dir\\txupd.exe\" -Force"
 		]
 	},
 	"shortcuts": [
