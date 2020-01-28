@@ -3,9 +3,16 @@
 	"version": "0.1.11",
 	"description": "Mellow proxy",
 	"url": "https://github.com/mellow-io/mellow/releases/download/v0.1.11/Mellow.Setup.0.1.11.exe#/dl.zip",
-	"post_install": [
-		"echo \"$dir\\`$PLUGINSDIR\\app-64.7z - $dir\"",
-		"7z.exe e \"$dir\\`$PLUGINSDIR\\app-64.7z\" -o\"$dir\" -aoa"
+	"installer": {
+		"script": [
+			"Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" -DestinationPath \"$dir\" -ExtractDir '.' -Removal"
+		]
+	},
+	"shortcuts": [
+		[
+			"Mellow.exe",
+			"Mellow"
+		]
 	],
 	"bin": "Mellow.exe"
 }
