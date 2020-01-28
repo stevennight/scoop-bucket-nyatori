@@ -6,7 +6,7 @@
 	"installer": {
 		"script": [
 			"$sh = new-object -com 'Shell.Application'"
-			"$scriptblock = 'Move-Item \"$dir\\Application Data\\*\" -Destination \"%AppData%\" -Force'",
+			"$scriptblock = 'Move-Item \"$dir\\Application Data\\*\" -Destination \"$env:APPDATA\" -Force'",
 			"$sh.ShellExecute('powershell', '-NoExit -Command $scriptblock', '', 'runas')"
 			"$scriptblock = 'Move-Item \"$dir\\Common\\*\" -Destination \"C:\\Program Files (x86)\\Common Files\" -Force'",
 			"$sh.ShellExecute('powershell', '-NoExit -Command $scriptblock', '', 'runas')"
