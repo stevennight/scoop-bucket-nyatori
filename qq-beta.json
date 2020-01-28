@@ -1,7 +1,7 @@
 {
 	"homepage": "https://im.qq.com/",
 	"version": "9.2.3",
-	"description": "QQ PC版安装程序",
+	"description": "QQ PC版",
 	"url": "https://qd.myapp.com/myapp/qqteam/pcqq/PCQQ2020.exe#/dl.zip",
 	"installer": {
 		"script": [
@@ -13,9 +13,9 @@
 	},
 	"shortcuts": [
 		[
-			"Bin\qq.exe",
+			"Bin\\qq.exe",
 			"QQ"
 		]
 	],
-	"bin": "Bin\qq.exe"
+	"bin": "Bin\\qq.exe"
 }
