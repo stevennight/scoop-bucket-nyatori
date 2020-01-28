@@ -5,7 +5,7 @@
 	"url": "https://github.com/mellow-io/mellow/releases/download/v0.1.11/Mellow.Setup.0.1.11.exe#/dl.zip",
 	"installer": {
 		"script": [
-			"Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" -DestinationPath \"$dir\" -ExtractDir '.' -Removal"
+			"Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" -DestinationPath \"$dir\" -Removal"
 		]
 	},
 	"shortcuts": [
