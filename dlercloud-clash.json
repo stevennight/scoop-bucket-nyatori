@@ -1,13 +1,18 @@
 {
 	"homepage": "https://dlercloud.com/client/windows.html",
 	"version": "0.1.11",
-	"description": "Clash Dlercloud Version",
+	"description": "Clash DlerCloud Version",
 	"url": "https://dlercloud.sgp1.cdn.digitaloceanspaces.com/Download/clash-win.exe#/dl.zip",
+	"installer": {
+		"script": [
+			"Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" -DestinationPath \"$dir\" -Removal"
+		]
+	},
 	"shortcuts": [
 		[
-			"Mellow.exe",
-			"Mellow"
+			"Clash for Windows - DlerCloud.exe",
+			"DlerCloud Clash"
 		]
 	],
-	"bin": "Mellow.exe"
+	"bin": "Clash for Windows - DlerCloud.exe"
 }
