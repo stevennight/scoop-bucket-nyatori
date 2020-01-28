@@ -1,0 +1,13 @@
+{
+	"homepage": "https://dlercloud.com/client/windows.html",
+	"version": "0.1.11",
+	"description": "Clash Dlercloud Version",
+	"url": "https://dlercloud.sgp1.cdn.digitaloceanspaces.com/Download/clash-win.exe#/dl.zip",
+	"shortcuts": [
+		[
+			"Mellow.exe",
+			"Mellow"
+		]
+	],
+	"bin": "Mellow.exe"
+}
