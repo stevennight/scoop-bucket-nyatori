@@ -1,6 +1,6 @@
 {
 	"homepage": "https://dlercloud.com/client/windows.html",
-	"version": "0.1.11",
+	"version": "0.8.9",
 	"description": "Clash DlerCloud Version",
 	"url": "https://dlercloud.sgp1.cdn.digitaloceanspaces.com/Download/clash-win.exe#/dl.zip",
 	"installer": {
