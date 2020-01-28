@@ -5,9 +5,9 @@
 	"url": "https://qd.myapp.com/myapp/qqteam/pcqq/PCQQ2020.exe#/dl.zip",
 	"installer": {
 		"script": [
-			"Get-Item \"$dir\\Application Data\\*\" | Where-Object {$_.PSIsContainer -eq $false} | Move-Item -Destination \"%AppData%\""
-			"Get-Item \"$dir\\Common\\*\" | Where-Object {$_.PSIsContainer -eq $false} | Move-Item -Destination \"C:\\Program Files (x86)\\Common Files\""
-			"Get-Item \"$dir\\Files\\*\" | Where-Object {$_.PSIsContainer -eq $false} | Move-Item -Destination \"$dir\""
+			"Get-Item \"$dir\\Application Data\\*\" | Where-Object {$_.PSIsContainer -eq $false} | Move-Item -Destination \"%AppData%\"",
+			"Get-Item \"$dir\\Common\\*\" | Where-Object {$_.PSIsContainer -eq $false} | Move-Item -Destination \"C:\\Program Files (x86)\\Common Files\"",
+			"Get-Item \"$dir\\Files\\*\" | Where-Object {$_.PSIsContainer -eq $false} | Move-Item -Destination \"$dir\"",
 			"Remove-Item \"$dir\\txupd.exe\""
 		]
 	},
